@@ -4,6 +4,10 @@
 import * as driver from './lib/basedriver/driver';
 import * as image from './lib/basedriver/image-element';
 import * as deviceSettings from './lib/basedriver/device-settings';
+import * as tracerProviderInstance from './lib/tracing/tracerProvider';
+import * as Tracer from './lib/tracing/tracer';
+import * as SpanProcessor from './lib/tracing/spanProcessor';
+export {tracerProviderInstance, Tracer, SpanProcessor };
 
 const { BaseDriver } = driver;
 const { ImageElement } = image;
